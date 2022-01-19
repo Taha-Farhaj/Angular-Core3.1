@@ -1,0 +1,476 @@
+<div id="pnlAddUser" class="offcanvas offcanvas-right">
+    <div kt-hidden-height="40" class="bg-white shadow p-2" style="margin-left: -8% !important;">
+        <h4 class="font-weight-bold m-0 "><a (click)="closePanel()" id="panel_close" class="btn left btn-xs btn-icon">
+            <i class="fa fa-close"></i></a> Employee </h4>
+    </div>
+    <div class="">
+        <div class="scroll">
+            <div class="">
+                <div class="card ">
+                    <div class="card-body p-0">
+                        <div ng-transclude="">
+                            <div title="Employee" class="ng-scope ">
+                                <div ng-show="selected" ng-transclude="" class="tab-pane pt-0">
+                                    <div class="row ng-scope">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xm-12">
+                                            <form novalidate="" id="AddDeal"
+                                                class=" ng-pristine ng-valid  ng-untouched">
+                                                <div class="row">
+                                                    <div class="container  col-12">
+                                                        <div class="card  mb-2" style="border-radius: 0px;">
+                                                            <div class="card-header flex-wrap border-0 pt-6 pb-0"
+                                                                style="border-radius: 0px;">
+                                                                <h3 class="card-title align-items-start flex-column">
+                                                                    <span
+                                                                        class="card-label font-weight-bolder font-size-h3 text-dark">General
+                                                                        Information</span>
+                                                                </h3>
+                                                                <div class="card-toolbar">
+                                                                    <div class="dropdown dropdown-inline">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body"
+                                                                style="border-radius: 0px; background-color: #EEF2F4;">
+
+                                                                <div class="row ">
+                                                                    <input type="hidden" formcontrolname="id">
+
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="FirstName">First Name</label>
+                                                                        <div class="controls">
+                                                                            <input type="text"
+                                                                                formcontrolname="firstName"
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="SecondName">Second Name</label>
+                                                                        <div class="controls">
+                                                                            <input type="text"
+                                                                                formcontrolname="secondName"
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="LastName">Last Name</label>
+                                                                        <div class="controls">
+                                                                            <input type="text"
+                                                                                formcontrolname="lastName"
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="Email">Email</label>
+                                                                        <div class="controls">
+                                                                            <input type="text" formcontrolname="email"
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="SecondaryEmail">Secondary
+                                                                            Email</label>
+                                                                        <div class="controls">
+                                                                            <input type="text"
+                                                                                formcontrolname="secondaryEmail"
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="Password">Password</label>
+                                                                        <div class="controls">
+                                                                            <input type="password"
+                                                                                formcontrolname="password"
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="Gender">Gender</label>
+                                                                        <div class="controls">
+                                                                            <select formcontrolname="gender"
+                                                                                class="kt_bootstrap_select form-control"
+                                                                                style="width: 100%;">
+
+                                                                                <option value="Men"
+                                                                                    ng-reflect-value="Men">Men</option>
+                                                                                <option value="Women"
+                                                                                    ng-reflect-value="Women">Women
+                                                                                </option>
+
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="MobilePhone">Mobile Phone</label>
+                                                                        <div class="controls">
+                                                                            <input type="text"
+                                                                                formcontrolname="mobilePhone"
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="City">City</label>
+                                                                        <div class="controls">
+                                                                            <input type="text" formcontrolname="city"
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="District">District</label>
+                                                                        <div class="controls">
+                                                                            <input type="text"
+                                                                                formcontrolname="district"
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="DateOfBirth">Date Of Birth</label>
+                                                                        <div class="controls">
+                                                                            <div class="input-group date">
+                                                                                <input type="text"
+                                                                                    formcontrolname="dateOfBirth"
+                                                                                    readonly=""
+                                                                                    placeholder="Select date"
+                                                                                    class="form-control">
+                                                                                <div class="input-group-append">
+                                                                                    <span class="input-group-text"><i
+                                                                                            class="la la-calendar-check-o"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="help-block"
+                                                                                style="display: none;"></span>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12"></div>
+
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="Role">Role</label>
+                                                                        <div class="controls">
+                                                                            <select placeholder="Please select" formcontrolname="role"  multiple="" class="kt_bootstrap_select form-control select2-hidden-accessible" style="width: 100%;">
+                                                            
+                                                                                <option value="Admin" ng-reflect-value="Admin">Admin</option>
+                                                                                <option value="Manager" ng-reflect-value="Manager">Manager</option>
+                                                                                <option value="TeamLead" ng-reflect-value="TeamLead">TeamLead</option>
+                                                                                <option value="CSR" ng-reflect-value="CSR">CSR</option>
+                                                                                <option value="Website" ng-reflect-value="Website">Website</option>
+                                                                                <option value="Customer" ng-reflect-value="Customer">Customer</option>
+                                                                                <option value="ProductionManager" ng-reflect-value="ProductionManager">ProductionManager</option>
+                                                                                <option value="ShippingManager" ng-reflect-value="ShippingManager">ShippingManager</option>
+                                                                                <option value="OperationalManager" ng-reflect-value="OperationalManager">OperationalManager</option>
+                                                                                <option value="Estimator" ng-reflect-value="Estimator">Estimator</option>
+                                                                                <option value="CmsOperator" ng-reflect-value="CmsOperator">CmsOperator</option>
+                                                                                <option value="Accountant" ng-reflect-value="Accountant">Accountant</option>
+                                                                                <option value="domesticJobManager" ng-reflect-value="domesticJobManager">domesticJobManager</option>
+                                                            
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>   
+                                                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                        <label for="Role">Application</label>
+                                                                        <div class="controls">
+                                                                            <select placeholder="Please select" formcontrolname="site"  multiple="" class="kt_bootstrap_select form-control select2-hidden-accessible" style="width: 100%;">
+                                                            
+                                                                                <option value="Admin" ng-reflect-value="Admin">Admin</option>
+                                                                                <option value="Manager" ng-reflect-value="Manager">Manager</option>
+                                                                                <option value="TeamLead" ng-reflect-value="TeamLead">TeamLead</option>
+                                                                                <option value="CSR" ng-reflect-value="CSR">CSR</option>
+                                                                                <option value="Website" ng-reflect-value="Website">Website</option>
+                                                                                <option value="Customer" ng-reflect-value="Customer">Customer</option>
+                                                                                <option value="ProductionManager" ng-reflect-value="ProductionManager">ProductionManager</option>
+                                                                                <option value="ShippingManager" ng-reflect-value="ShippingManager">ShippingManager</option>
+                                                                                <option value="OperationalManager" ng-reflect-value="OperationalManager">OperationalManager</option>
+                                                                                <option value="Estimator" ng-reflect-value="Estimator">Estimator</option>
+                                                                                <option value="CmsOperator" ng-reflect-value="CmsOperator">CmsOperator</option>
+                                                                                <option value="Accountant" ng-reflect-value="Accountant">Accountant</option>
+                                                                                <option value="domesticJobManager" ng-reflect-value="domesticJobManager">domesticJobManager</option>
+                                                            
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>   
+                                                                </div>
+                                                            </div>
+                                                            <div department="" class="card  mt-2 ml-1">
+
+                                                                <div id="headingDepartment" class="card-header">
+                                                                    <div data-toggle="collapse"
+                                                                        data-target="#Department" class="card-title"
+                                                                        aria-expanded="true">
+                                                                        <span
+                                                                            class="flaticon2-fast-next"></span>&nbsp;&nbsp;Department
+                                                                    </div>
+                                                                </div>
+
+                                                                <div id="Department" data-parent="#AddDeal"
+                                                                    class="collapse show" style="">
+                                                                    <div class="card-body"
+                                                                        style="background-color: #EEF2F4;">
+
+                                                                        <div class="row">
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>Department</label>
+                                                                                <div class="controls">
+
+                                                                                    <select formcontrolname="department"
+                                                                                        class="kt_bootstrap_select form-control"
+                                                                                        style="width: 100%;">
+
+                                                                                        <option value="Call Center"
+                                                                                            ng-reflect-value="Call Center">
+                                                                                            Call Center</option>
+                                                                                        <option value="Oprations"
+                                                                                            ng-reflect-value="Oprations">
+                                                                                            Oprations</option>
+                                                                                        <option value="Production"
+                                                                                            ng-reflect-value="Production">
+                                                                                            Production</option>
+                                                                                        <option value="Development"
+                                                                                            ng-reflect-value="Development">
+                                                                                            Development</option>
+                                                                                        <option value="Accounts"
+                                                                                            ng-reflect-value="Accounts">
+                                                                                            Accounts</option>
+                                                                                    </select>
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>Position</label>
+                                                                                <div class="controls">
+
+                                                                                    <select formcontrolname="position"
+                                                                                        class="kt_bootstrap_select form-control"
+                                                                                        style="width: 100%;">
+
+                                                                                        <option value="Admin"
+                                                                                            ng-reflect-value="Admin">
+                                                                                            Admin</option>
+                                                                                        <option value="Manager"
+                                                                                            ng-reflect-value="Manager">
+                                                                                            Manager</option>
+                                                                                        <option value="Team Lead"
+                                                                                            ng-reflect-value="Team Lead">
+                                                                                            Team Lead</option>
+                                                                                        <option value="CSR"
+                                                                                            ng-reflect-value="CSR">CSR
+                                                                                        </option>
+                                                                                        <option
+                                                                                            value="Production Manager"
+                                                                                            ng-reflect-value="Production Manager">
+                                                                                            Production Manager
+                                                                                        </option>
+                                                                                        <option value="Shipping Manager"
+                                                                                            ng-reflect-value="Shipping Manager">
+                                                                                            Shipping Manager
+                                                                                        </option>
+                                                                                        <option
+                                                                                            value="Operational Manager"
+                                                                                            ng-reflect-value="Operational Manager">
+                                                                                            Operational
+                                                                                            Manager</option>
+                                                                                        <option value="Estimator"
+                                                                                            ng-reflect-value="Estimator">
+                                                                                            Estimator</option>
+                                                                                        <option value="CMS Operator"
+                                                                                            ng-reflect-value="CMS Operator">
+                                                                                            CMS Operator</option>
+                                                                                        <option value="Accountant"
+                                                                                            ng-reflect-value="Accountant">
+                                                                                            Accountant</option>
+                                                                                        <option
+                                                                                            value="domestic Job Manager"
+                                                                                            ng-reflect-value="domestic Job Manager">
+                                                                                            domestic Job
+                                                                                            Manager</option>
+                                                                                    </select>
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>Extension Number</label>
+                                                                                <div class="controls">
+                                                                                    <input type="text"
+                                                                                        formcontrolname="extensionNumber"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>Skills</label>
+                                                                                <div class="controls">
+                                                                                    <input type="text"
+                                                                                        formcontrolname="skills"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>Interests</label>
+                                                                                <div class="controls">
+                                                                                    <input type="text"
+                                                                                        formcontrolname="interests"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>Work Phone</label>
+                                                                                <div class="controls">
+                                                                                    <input type="text"
+                                                                                        formcontrolname="workPhone"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>Hiring Date</label>
+                                                                                <div class="controls">
+                                                                                    <div class="input-group date">
+                                                                                        <input type="text"
+                                                                                            formcontrolname="hiringDate"
+                                                                                            readonly=""
+                                                                                            placeholder="Select date"
+                                                                                            class="form-control">
+                                                                                        <div class="input-group-append">
+                                                                                            <span
+                                                                                                class="input-group-text"><i
+                                                                                                    class="la la-calendar-check-o"></i></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div social="" class="card  mt-2 ml-1">
+
+                                                                <div id="headingSocial" class="card-header">
+                                                                    <div data-toggle="collapse" data-target="#Social"
+                                                                        class="card-title collapsed"
+                                                                        aria-expanded="false">
+                                                                        <span
+                                                                            class="flaticon2-fast-next"></span>&nbsp;&nbsp;
+                                                                        Social Links
+                                                                    </div>
+                                                                </div>
+
+                                                                <div id="Social" data-parent="#AddDeal" class="collapse"
+                                                                    style="">
+                                                                    <div class="card-body"
+                                                                        style="background-color: #EEF2F4;">
+                                                                        <div class="row">
+
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>Skype Name</label>
+                                                                                <div class="controls">
+                                                                                    <input type="text"
+                                                                                        formcontrolname="skypeName"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>Twitter</label>
+                                                                                <div class="controls">
+                                                                                    <input type="text"
+                                                                                        formcontrolname="twitter"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>Facebook</label>
+                                                                                <div class="controls">
+                                                                                    <input type="text"
+                                                                                        formcontrolname="facebook"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>LinkedIn</label>
+                                                                                <div class="controls">
+                                                                                    <input type="text"
+                                                                                        formcontrolname="linkedIn"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>Skype Chat Link</label>
+                                                                                <div class="controls">
+                                                                                    <input type="text"
+                                                                                        formcontrolname="skypeChatLink"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div
+                                                                                class="form-group col-lg-4 col-md-4 col-sm-12">
+                                                                                <label>Zoom</label>
+                                                                                <div class="controls">
+                                                                                    <input type="text"
+                                                                                        formcontrolname="zoom"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="card-footer p-2 bg-transparent no-border text-right">
+                                                                <input type="submit" id="btn_AddDeal"
+                                                                    value="Submit Values" class="right btn btn-primary"
+                                                                    style="float: right;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                        <div tabindex="0" class="ps__thumb-x" style="left: 0px; width: 0px;"></div>
+                    </div>
+                    <div class="ps__rail-y" style="top: 0px; right: 0px;">
+                        <div tabindex="0" class="ps__thumb-y" style="top: 0px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--container-->
+</div>

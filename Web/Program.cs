@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BWC.Web
+namespace CRM.Web
 {
     public class Program
     {

@@ -1,31 +1,31 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using BWC.Services;
+using CRM.Services;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using BWC.DBCore.Uow;
-using BWC.DBCore.Factory;
-using BWC.DBCore.Repositories.Interfaces;
-using BWC.DBCore.Repositories.Base;
-using BWC.Utilities.logManager;
+using CRM.DBCore.Uow;
+using CRM.DBCore.Factory;
+using CRM.DBCore.Repositories.Interfaces;
+using CRM.DBCore.Repositories.Base;
+using CRM.Utilities.logManager;
 using Microsoft.AspNetCore.Http;
-using BWC.DBCore.Context.EFContext;
-using BWC.Models.Configuration;
+using CRM.DBCore.Context.EFContext;
+using CRM.Models.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http.Features;
-using BWC.Models.Entities;
+using CRM.Models.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.OpenApi.Models;
-using BWC.Utilities.Hashing;
+using CRM.Utilities.Hashing;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 
-namespace BWC.Web
+namespace CRM.Web
 {
     public class Startup
     {
@@ -49,7 +49,7 @@ namespace BWC.Web
             services.AddSingleton(mapper);
             services.AddCors(options =>
             {
-                options.AddPolicy("CorsPolicy", builder => builder.WithOrigins("http://localhost:4200", "http://92.204.161.4:1111").WithOrigins("https://localhost:44317").WithOrigins("https://localhost:44383")
+                options.AddPolicy("CorsPolicy", builder => builder.WithOrigins("http://localhost:4200", "http://92.204.161.4:1111").WithOrigins("https://localhost:44317").WithOrigins("https://localhost:44347")
                     .AllowAnyMethod()
                     .AllowAnyHeader()
                     .AllowCredentials());

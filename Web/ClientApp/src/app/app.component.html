@@ -1,0 +1,20 @@
+
+<div class="container body">
+    <div class="main_container">
+      <app-sidemenu *ngIf="loading"></app-sidemenu>
+
+      <app-header *ngIf="loading"></app-header>
+
+
+      <div class="right_col" role="main" style="min-height: 3109px;"  [ngStyle]="{'margin-left': (loading== false) ? '0px' : 's'}">
+        <div class="">
+            <router-outlet></router-outlet>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+
+     <app-footer *ngIf="loading"></app-footer>
+
+    </div>
+  </div>
